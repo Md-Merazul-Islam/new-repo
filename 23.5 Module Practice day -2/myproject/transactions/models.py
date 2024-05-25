@@ -15,7 +15,7 @@ class Transaction(models.Model):
         ordering = ['timestamp'] 
         
         
-        
+
 
 class Transfer(models.Model):
     sender = models.ForeignKey(UserBankAccount, related_name='transfers_sent', on_delete=models.CASCADE)
